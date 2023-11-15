@@ -12,8 +12,36 @@ body {
     background-color: var(--background-color); 
     color: var(--foreground-color);
     font-family: 'Roboto', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    borde
 }
 
 a {
     color: var(--foreground-a-color);
+}
+
+.element{
+    background-color: #606265;
+    margin: 15px;
+}
+
+.sub{
+    font-size: 10px;font-style: italic;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    float:inline-end;
+    border: 5px double #AFB0B2
+    ;
+}
+
+#volver{
+    filter:brightness(140%);
+    width: 50px;
+    float: inline-end;
+    border-radius: 100%;
 }

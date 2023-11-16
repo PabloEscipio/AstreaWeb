@@ -10,7 +10,7 @@
     margin: 0px;
     padding: 0px;
 
-    overflow: auto;
+    overflow: hidden;
 }
 
 img {
@@ -20,8 +20,8 @@ img {
 :root {
     /* variables de color */
     --background-color: #2b2d31;
-    --foreground-color: #f2f3f5;
-    --foreground-a-color: #00a8fc;
+    --font-color: #E4E5E5;
+    --font-a-color: #00a8fc;
     --border-color: #AFB0B2;
     --article-bg-color: #36373B;
     --foot-bg: #1B1C1F;
@@ -29,29 +29,16 @@ img {
 
 #container {
     background-color: var(--background-color);
-    color: var(--foreground-color);
+    color: var(--font-color);
     font-family: 'Roboto', sans-serif;
-    height: 100vw;
+    height: 100vh;
 
     /* grid principal */
     display: grid;
-    grid-template-rows: 11vw 3.5vw 1fr 5vw;
+    grid-template-rows: 11vw 4vh 1fr 6vh;
 }
 
-/* Especificos */
-/* formato */
-
-a {
-    color: var(--foreground-a-color);
-}
-
-.sub {
-    font-size: 1vw;
-    font-style: italic;
-}
-
-/* mierda grid*/
-
+/* Grid */
 /* Header */
 header {
     grid-row: 1 / 2;
@@ -75,8 +62,8 @@ header img {
 /* Nav */
 nav {
     grid-row: 2 / 3;
-    border: 1px solid var(--border-color);
-    border-radius: 1vw;
+    border: 0vw;
+    border-radius: 2vh;
     margin: 0.5vh 5vw;
 
     display: grid;
@@ -114,8 +101,40 @@ footer {
     padding: 1vw;
 }
 
+
+/* Especificos */
+/* formato */
+a {
+    color: var(--font-a-color);
+}
+
+.sub {
+    font-size: 1vh;
+    font-style: italic;
+}
+
+article {
+    background-color: var(--article-bg-color);
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+    margin: 1.5vh 0px;
+}
+
 /* Imagenes */
 #logo {
     border-radius: 100%;
     border: 1vw double var(--border-color);
 }
+
+button {
+    background-color: var(--font-color);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--article-bg-color);
+    filter: brightness(160%);
+}
+
+/* Espacio para test */
+/* Borrar al acabar */

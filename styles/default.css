@@ -1,47 +1,121 @@
+/* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Nanum+Pen+Script&family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+/* font-family: 'Cinzel Decorative', serif; */
 
+/* Base */
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    overflow: auto;
+}
+
+img {
+    width: 100%;
+}
 
 :root {
+    /* variables de color */
     --background-color: #2b2d31;
     --foreground-color: #f2f3f5;
     --foreground-a-color: #00a8fc;
+    --border-color: #AFB0B2;
+    --article-bg-color: #36373B;
+    --foot-bg: #1B1C1F;
 }
 
-
-body {
-    background-color: var(--background-color); 
+#container {
+    background-color: var(--background-color);
     color: var(--foreground-color);
     font-family: 'Roboto', sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
-    borde
+    height: 100vw;
+
+    /* grid principal */
+    display: grid;
+    grid-template-rows: 11vw 3.5vw 1fr 5vw;
 }
+
+/* Especificos */
+/* formato */
 
 a {
     color: var(--foreground-a-color);
 }
 
-.element{
-    background-color: #606265;
-    margin: 15px;
+.sub {
+    font-size: 1vw;
+    font-style: italic;
 }
 
-.sub{
-    font-size: 10px;font-style: italic;
+/* mierda grid*/
+
+/* Header */
+header {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 15vw;
+    margin: 0.5vw 5vw;
 }
 
-.logo{
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    float:inline-end;
-    border: 5px double #AFB0B2
-    ;
+header h1 {
+    grid-column: 1 / 2;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 7vw;
 }
 
-#volver{
-    filter:brightness(140%);
-    width: 50px;
-    float: inline-end;
+header img {
+    grid-column: 2 / 3;
+    width: auto;
+    height: 8vw;
+}
+
+/* Nav */
+nav {
+    grid-row: 2 / 3;
+    border: 1px solid var(--border-color);
+    border-radius: 1vw;
+    margin: 0.5vh 5vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav #pos1 {
+    grid-column: 1 / 2;
+}
+
+nav #pos2 {
+    grid-column: 2 / 3;
+}
+
+nav #pos3 {
+    grid-column: 3 / 4;
+}
+
+nav #pos4 {
+    grid-column: 4 / 5;
+}
+
+/* Main */
+main {
+    grid-row: 3 / 4;
+    margin-top: 4vh;
+    margin: 0.5vw 5vw;
+}
+
+/* Footer */
+footer {
+    grid-row: 4 / 5;
+    background-color: var(--foot-bg);
+    text-align: end;
+    padding: 1vw;
+}
+
+/* Imagenes */
+#logo {
     border-radius: 100%;
+    border: 1vw double var(--border-color);
 }

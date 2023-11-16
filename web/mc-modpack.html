@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrea</title>
     <link rel="stylesheet" href="../styles/default.css">
+    <script src="../script/script.js"></script>
 </head>
+
 <body>
-    <h1>Astrea <a href="../index.html"><img class="logo" src="../archivos/img/AstreaLogo.jpg" alt="Un logo con forma de balanza con alas"></a></h1>  
-        <p>Astrea es un servidor personal orientado al hosteo de partidas para jugar con amigos</p>
-        <a href="../index.html"><img id="volver" src="../archivos/img/volver.png" alt="volver"></a>
-<hr>
-    <h1>Modpack</h1>
-    <p>Aquí puedes descargar las diferentes versiones del modpack que se esta usando actualmente en el servidor de minecraft, en los "update" se encuentran solo los archivos necesarios para actualizar desde la version antrerior.</p>
-    <p><a href="./archivos/mc-modpack/astreapack-ver5.zip">modpack-ver.5</a><span class="sub">(Last)</span></p>
+    <div id="container">
+        <header>
+            <h1>Astrea</h1>
+            <img id="logo" src="../img/AstreaLogo.jpg" alt="Un logo con forma de balanza con alas">
+        </header>
+
+        <nav>
+            <button id="pos1" onclick="redirigir('../index.html')">Inicio</button>
+            <button id="pos2" onclick="redirigir('./mc-modpack.html')">Minecraft</button>
+            <button id="pos3" onclick="redirigir('./desarrollo.html')">Satisfactory</button>
+            <button id="pos4" onclick="redirigir('./desarrollo.html')">PZ</button>
+        </nav>
+
+        <main>
+            <section>
+                <article>
+                    <h2>Modpack</h2>
+                    <p><a href="../archivos/mc-modpack/astreapack-ver5.zip">astreapack-ver5</a><span class="sub">(Last)</span></p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <h5>Direcciones de contacto:</h5>
+            <h6>xipabloxon@gmail.com</h6>
+        </footer>
+    </div>
+
+
 </body>
+
+
 </html>
